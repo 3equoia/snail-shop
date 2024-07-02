@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Sahel";
+    src: url("https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/Sahel.woff2")
+}
+
+body{
+    font-family: "Sahel";
+}
+
+.header{
+    height: 750px;
+    background-image: url("../img/snail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: padding-box;
+}
