@@ -210,7 +210,7 @@ a{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .header{
         height: 800px;
         background-position: right;
