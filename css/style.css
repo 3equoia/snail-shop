@@ -31,34 +31,47 @@ a{
     background-position: center;
     background-blend-mode: multiply;
     color: whitesmoke;
-    padding-top: 50px;
+    padding-top: 25px;
     text-align: center;
 }
 
-.header .nav{
+.nav{
     list-style-type: none;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    /* background-color: hsla(0, 0%, 52%, .25); */
 }
 
-.header .nav .list-item a{
+.nav i{
+    display: none;
+}
+
+.nav .list-item a{
     color: white;
+    text-shadow: 
+        1px 1px 5px black,
+        -1px -1px 5px black;
 }
 
-.header .nav .list-item{
+.nav .list-item{
     display: inline-block;
     padding: 15px;
 }
 
-.header .nav .list-item:hover{
+.nav .list-item:hover{
     transition: 0.05s;
     transform: scale(1.1);
 }
 
-.header .nav .list-item a:hover{
+.nav .list-item a:hover{
     color: orange;
 }
 
 .title{
-    font-size: 75px;
+    /* font-size: 75px; */
+    padding-top: 50px;
+    font-size: 7vw;
     margin-top: 100px;
 }
 
@@ -67,16 +80,17 @@ a{
 }
 
 .header p{
-    /* color: rgb(255, 136, 0); */
+    color: rgb(255, 136, 0);
     background-color: hsl(0, 0%, 0%, 0.75);
-    height: 60px;
-    width: 400px;
+    height: 10cqb;
+    width: 50cqb;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     line-height: 60px;
     border-radius: 15px;
     border: 1px solid beige;   
+    cursor: grab;
 }
 
 .header p:hover{
@@ -86,6 +100,10 @@ a{
         /* 0 -2px 15px orange; */
     transform: scale(1.005);
 }
+
+
+
+
 
 
 .members{
@@ -190,4 +208,40 @@ a{
 .top-btn a{
     color: rgb(0, 0, 0);
     text-shadow: 0px 0px 5px green;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        position: fixed;
+        display: block;
+        height: 100px;
+        
+    }
+
+    .nav i{
+        display: inline;
+        font-size: xx-large;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+    
+    .list-item{
+        display: block;
+        margin-top: 15px;
+        
+    }
+    
+    .list-item a{
+        font-size: x-small;
+        display: none;
+
+    }
+    
+    
+    .nav:hover .list-item a{ 
+        display: inline-block;
+    }
 }
